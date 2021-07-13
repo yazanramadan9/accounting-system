@@ -1,0 +1,26 @@
+.dark {
+  background: #222;
+}
+
+.dark .container fieldset legend {
+  color: #fff;
+}
+
+.dark .container fieldset form div label {
+  color: #fff;
+}
+
+.dark .container fieldset form div input {
+  color: #222;
+  background: #fff;
+}
+
+.dark .container fieldset form div [type="submit"] {
+  background: #5e7eff;
+  color: #fff;
+}
+
+.dark .container fieldset form div [type="submit"]:hover {
+  background: #3a61ff;
+}
+/*# sourceMappingURL=loginDarkTheme.css.map */

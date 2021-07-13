@@ -1,0 +1,61 @@
+::-webkit-input-placeholder {
+  color: #4f6affbb;
+}
+
+:-ms-input-placeholder {
+  color: #4f6affbb;
+}
+
+::-ms-input-placeholder {
+  color: #4f6affbb;
+}
+
+::placeholder {
+  color: #4f6affbb;
+}
+
+.light .container {
+  -webkit-box-shadow: 0 1px 5px -1px #222;
+          box-shadow: 0 1px 5px -1px #222;
+  background: #fff;
+}
+
+.light .container fieldset {
+  border: none;
+}
+
+.light .container fieldset legend {
+  background: #fff;
+  color: #5e7eff;
+}
+
+.light .container fieldset form div label {
+  color: #5e7eff;
+}
+
+.light .container fieldset form div input:not([type="submit"]) {
+  color: #222;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px -1px #222;
+          box-shadow: 0 1px 3px -1px #222;
+}
+
+.light .container fieldset form div [type="submit"] {
+  background: #5e7eff;
+  color: #fff;
+  -webkit-box-shadow: 0 2px 5px -1px #222;
+          box-shadow: 0 2px 5px -1px #222;
+}
+
+.light .container fieldset form div [type="submit"]:hover {
+  background: #2b55ff;
+}
+
+.light .container fieldset form div a {
+  color: #5e7eff;
+}
+
+.light .container fieldset form div a:hover {
+  color: #0739ff;
+}
+/*# sourceMappingURL=loginLightTheme.css.map */

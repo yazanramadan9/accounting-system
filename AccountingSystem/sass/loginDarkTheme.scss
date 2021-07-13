@@ -1,0 +1,29 @@
+@import "colors";
+.dark {
+    background: $darkBg;
+    .container {
+        fieldset {
+            legend {
+                color: $lightTextColor;
+            }
+            form {
+                div {
+                    label {
+                        color: $lightTextColor;
+                    }
+                    input {
+                        color: $darkTextColor;
+                        background: $lightBg;
+                    }
+                    [type="submit"] {
+                        background: $primaryColor;
+                        color: #fff;
+                        &:hover {
+                            background: darken($primaryColor,7%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

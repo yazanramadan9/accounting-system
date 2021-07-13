@@ -1,0 +1,37 @@
+.light {
+  background-color: #222;
+}
+
+.light .horizontal-nav {
+  background: #222;
+}
+
+.light .horizontal-nav .navbar:hover .navbar-item .navbar-link {
+  color: #d0d0d0;
+}
+
+.light .horizontal-nav .navbar .navbar-item .navbar-link {
+  color: #fff;
+}
+
+.light .horizontal-nav .navbar .navbar-item .navbar-link:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.light .side-menu {
+  background: #fdfdfd;
+}
+
+.light .side-menu .logo-container {
+  background: #222;
+}
+
+.light .side-menu .logo-container #logo {
+  color: #fff;
+}
+
+.light .side-menu .navbar .navbar-item .navbar-link {
+  color: #555;
+}
+/*# sourceMappingURL=lightTheme.css.map */

@@ -1,0 +1,37 @@
+.dark {
+  background: #222;
+}
+
+.dark .horizontal-nav {
+  background: #222;
+}
+
+.dark .horizontal-nav .navbar:hover .navbar-item .navbar-link {
+  color: #dadada;
+}
+
+.dark .horizontal-nav .navbar .navbar-item .navbar-link {
+  color: #fff;
+}
+
+.dark .horizontal-nav .navbar .navbar-item .navbar-link:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.dark .side-menu {
+  background: #fdfdfd;
+}
+
+.dark .side-menu .logo-container {
+  background: #222;
+}
+
+.dark .side-menu .logo-container #logo {
+  color: #fff;
+}
+
+.dark .side-menu .navbar .navbar-item .navbar-link {
+  color: #555;
+}
+/*# sourceMappingURL=darkTheme.css.map */

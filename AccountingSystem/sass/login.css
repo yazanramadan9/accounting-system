@@ -1,0 +1,95 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-family: cursive;
+}
+
+.container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: #222;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 7px 0 #000;
+          box-shadow: 0 0 7px 0 #000;
+}
+
+.container fieldset {
+  border: 1px solid #5e7eff;
+  width: 280px;
+  padding: 10px;
+}
+
+.container fieldset legend {
+  color: #fff;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.container fieldset form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: 3px auto;
+}
+
+.container fieldset form div label {
+  display: block;
+  color: #fff;
+  margin: 5px;
+  padding-left: 0.3em;
+  font-size: 0.9em;
+}
+
+.container fieldset form div input {
+  display: block;
+  margin: 10px;
+  color: #222;
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-size: 0.9em;
+  text-indent: 0.3em;
+}
+
+.container fieldset form div a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 0.85em;
+  margin: 7px auto;
+}
+
+.container fieldset form div a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.container fieldset form div [type="submit"] {
+  border: none;
+  background: #5e7eff;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.container fieldset form div [type="submit"]:hover {
+  background: #3a61ff;
+}
+/*# sourceMappingURL=login.css.map */

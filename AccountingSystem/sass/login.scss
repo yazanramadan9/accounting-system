@@ -1,0 +1,78 @@
+@import "colors";
+* {
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: cursive;
+}
+// ::placeholder {
+//     color: #4f6affbb;
+// }
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background: $darkBg;
+    min-width: 300px;   
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 7px 0 #000;
+    fieldset{
+        border: 1px solid $primaryColor;
+        width: 280px;
+        padding: 10px;
+        legend {
+            color: #fff;
+            font-size: 1.3em;
+            text-align: center;
+            padding: 0 15px;
+        }
+        form {
+            div {
+                display: flex;
+                flex-flow: column wrap;
+                margin: 3px auto;
+                label {
+                    display: block;
+                    color: $lightTextColor;
+                    margin: 5px;
+                    padding-left: 0.3em;
+                    font-size: 0.9em;
+                }
+                input {
+                    display: block;
+                    margin: 10px;
+                    color: $darkBg;
+                    outline: none;
+                    border: none;
+                    padding: 5px;
+                    font-size: 0.9em;
+                    text-indent: 0.3em;
+                }
+                a {
+                    text-decoration: none;
+                    text-align: center;
+                    color: $lightTextColor;
+                    font-size: 0.85em;
+                    margin: 7px auto;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #fff;
+                    }
+                }
+                [type="submit"] {
+                    border: none;
+                    background: $primaryColor;
+                    color: #fff;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                    &:hover {
+                        background: darken($primaryColor, 7%);
+                    }
+                }
+            }
+        }
+    }
+}

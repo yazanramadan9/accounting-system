@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,eADW,CACX,OAAO,CAAC;EACJ,eAAe,EAAE,QAAQ;CAO5B;;AATL,AAKY,eALG,CACX,OAAO,CAGH,YAAY,CACR,mBAAmB,CAAC;EAChB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "arabicView.scss"
+    ],
+    "names": [],
+    "file": "arabicView.css"
+}

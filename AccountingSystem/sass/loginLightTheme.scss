@@ -1,0 +1,44 @@
+@import "colors";
+::placeholder {
+    color: #4f6affbb;
+}
+.light {
+    .container {
+        box-shadow: 0 1px 5px -1px $darkBg;
+        background: $lightBg;
+        // padding: 10px;
+        fieldset {
+            border: none;
+            legend {
+                background: $lightBg;
+                color: $primaryColor;
+            }
+            form {
+                div {
+                    label {
+                        color: $primaryColor;
+                    }
+                    input:not([type="submit"]) {
+                        color: $darkTextColor;
+                        background: $lightBg;
+                        box-shadow: 0 1px 3px -1px #222;
+                    }
+                    [type="submit"] {
+                        background: $primaryColor;
+                        color: #fff;
+                        box-shadow: 0 2px 5px -1px $darkBg;
+                        &:hover {
+                            background: darken($primaryColor, 10%);
+                        }
+                    }
+                    a {
+                        color: $primaryColor;
+                        &:hover {
+                            color: darken($primaryColor, 17%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./sass/login.css">
+        <link rel="stylesheet" href="./sass/loginDarkTheme.css">
+        <link rel="stylesheet" href="./sass/loginLightTheme.css">
+    </head>
+    <body class="light arabic">
+        <div class="container">
+            <fieldset>
+                <legend>Login</legend>
+                <form id="login-form" method="POST">
+                    <div>
+                        <label for="username">username</label>
+                        <input type="text" name="username" />
+                    </div>
+                    <div>
+                        <label for="password">password</label>
+                        <input type="text" name="password" />
+                    </div>
+                    <div>
+                        <input type="submit" value="login" />
+                    </div>
+                    <div>
+                        <a href="">forgot your password ?</a>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+        
+        <script>
+           const loginForm = document.getElementById("login-form");
+           loginForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+           });
+        </script>
+    </body>
+</html>

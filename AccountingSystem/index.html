@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testing sass compiler</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./sass/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    </head>
+    <body class="light arabic">
+        <nav class="horizontal-nav arabic-horizontal-nav">
+            <ul class="navbar">
+                <li class="navbar-item logo">
+                    <button class="change-theme-btn" onclick="changeTheme()"><span>change theme</span><div class="focus-effect-circle"></div></button>
+                    <a class="navbar-link arabic-navbar-link navbar-logo" href=""><i class="fas fa-business-time"></i> KBS</a>
+                    <a class="navbar-link english-navbar-logo" href="">Business LOGO<i class="fal fa-business-time" id="logo"></i></a>
+                    <span class="toggle-side-menu" onclick="toggleSideMenu()"><i class="fas fa-bars"></i></span>
+                </li>
+                <div class="navbar-items">
+                    <li class="navbar-item"><a class="navbar-link arabic-navbar-link" href="">صفحة 3</a> <a class="navbar-link english-navbar-link" href="">page 4</a></li>
+                    <li class="navbar-item"><a class="navbar-link arabic-navbar-link" href="./login.html">التسجيل</a> <a class="navbar-link english-navbar-link" href="./login.html">registration</a></li>
+                </div>
+            </ul>
+        </nav>
+        <nav class="side-menu arabic-side-menu">
+            <div class="logo-container">
+                <a class="arabic-logo logo" href="">نظام الأعمال</a> 
+                <a class="english-logo logo" href="">Business LOGO</a>
+                <span onclick="toggleSideMenu()" class="toggle-side-menu"><i class="fas fa-bars"></i></span>
+            </div>
+            <ul class="navbar">
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-journal-whills"></i>سندات قيد</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-journal-whills"></i>Journals</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">تقارير</button> <a href="" class="navbar-link english-navbar-link" href="">reports</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-invoice"></i>سندات الدفع</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-invoice"></i>Payment Vouchers</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">تقارير</button> <a href="" class="navbar-link english-navbar-link" href="">reports</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="far fa-file-invoice-dollar"></i>سندات القبض</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="far fa-file-invoice-dollar"></i>Receipt Vouchers</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">تقارير</button> <a href="" class="navbar-link english-navbar-link" href="">reports</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="far fa-file-invoice"></i>الشيكات مستحقة الدفع</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="far fa-file-invoice"></i>Payable Cheques</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">تقارير</button> <a href="" class="navbar-link english-navbar-link" href="">reports</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="far fa-file-invoice"></i>الشيكات مستحقة القبض</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="far fa-file-invoice"></i>Receivable Cheques</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">تقارير</button> <a href="" class="navbar-link english-navbar-link" href="">reports</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a href="" class="navbar-link english-navbar-link">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>فواتير المبيعات</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>Sales Invoices</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>جدول الحسابات</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>Chart Of Accounts</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>مراكز التكلفة</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>Cost Centers</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>السنوات المالية</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>Fiscal Years</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>التقارير</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>Reports</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>العناصر و الكاتالوجات</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-file-alt"></i>Items & Catalogues</h2>
+                        <div class="navbar-item-list">    
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <h2 class="navbar-link arabic-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-cog fa-fw"></i>الإعدادات</h2> 
+                        <h2 class="navbar-link english-navbar-link menu-header" onclick="toggleList(event)"><i class="fas fa-cog fa-fw"></i>Settings</h2>
+                        <div class="navbar-item-list">
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                            <a href="" class="navbar-link arabic-navbar-link">رابط</a> <a class="navbar-link english-navbar-link" href="">link</a>
+                        </div>
+                    </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="page-content">
+                <table class="table">
+                    <tr>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                        <th>table data</th>
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td> 
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td> 
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td> 
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td> 
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                    </tr>
+                    <tr>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                        <td>table data</td>
+                    </tr>
+
+                </table>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <img src="./svg/finance.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="page1-content">
+                <form action="">
+                    <div></div>
+                </form>
+            </div>
+            <footer>
+                <ul>
+                    <h2>About Us</h2>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                </ul>
+                <ul>
+                    <h2>Contact Us</h2>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                </ul>
+                <ul>
+                    <h2>Report a Problem</h2>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                    <li><a href="">footer link</a></li>
+                </ul>
+            </footer>
+      
+        </main>
+
+        <script src="./js/index.js"></script>
+        <script>
+            function toggleList(evnt) {
+                const navbarItemList = evnt.currentTarget.parentNode.children;       
+                navbarItemList[2].classList.toggle("show");   
+            }
+        </script>
+
+    </body>
+</html>
